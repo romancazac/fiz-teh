@@ -1,14 +1,3 @@
-// const intem = document.querySelectorAll(".language__item");
-// for (let index = 0; index < intem.length; index++) {
-//     const inte = intem[index];
-//     inte.addEventListener("click", function(){
-//       inte.classList.remove('active');
-//       inte.classList.toggle('active');
-        
-        
-//     });
-    
-// }
 
 $('.section-doc__slider').slick({
   slidesToShow: 3,
@@ -35,9 +24,7 @@ $('.section-doc__slider').slick({
             slidesToScroll: 1
         }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+   
 ]
   
 });
@@ -92,4 +79,20 @@ $(function() {
    
   })();
 
+window.addEventListener('scroll', () => {
+  if (getTop() > offset) {
+    scrollUp.classList.add ('active');
+  } else {
+    scrollUp.classList.remove ('active');
+  }
+
+});
+scrollUp.addEventListener('click', () => {
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+
+
+});
  
