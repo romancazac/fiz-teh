@@ -79,6 +79,13 @@ $(function() {
    
   })();
 
+const offset = 500;
+const scrollUp = document.querySelector('.scroll-top ');
+
+
+const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
+
+const updateDashoffset = () => {};
 window.addEventListener('scroll', () => {
   if (getTop() > offset) {
     scrollUp.classList.add ('active');
