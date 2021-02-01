@@ -44,7 +44,7 @@ $('.section-doc__slider').slick({
 
 const headeBurger = document.querySelector('.header__burger');
 const headerMenu = document.querySelector('.header__nav');
-  
+const headerList = document.querySelector('.header__list');  
     
       headeBurger.addEventListener("click", function (e) {
       
@@ -52,6 +52,15 @@ const headerMenu = document.querySelector('.header__nav');
         headeBurger.classList.toggle('active');
         headerMenu.classList.toggle('active');
 });
+headerList.addEventListener("click", function (e) {
+      
+      
+  headeBurger.classList.remove('active');
+  headerMenu.classList.remove('active');
+  
+
+});
+
 
 $(function() {
   $(".language__item").click(function() {
