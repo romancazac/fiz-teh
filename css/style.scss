@@ -1324,4 +1324,20 @@ text-decoration: underline;
   .icon{
     margin-right: 20px;
   }
+.scroll-top {
+    position: fixed;
+    z-index: 10;
+    right: 200px;
+    bottom: 100px;
+    fill: #0f3076;
+    opacity: 0;
+    cursor: pointer;
+    &.active{
+      opacity: 1;
+    }
+    @media (max-width:700px){
+      right: 50px;
+    bottom: 50px;
+    }
+  }
 
