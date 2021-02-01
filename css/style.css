@@ -1254,4 +1254,24 @@ body {
 .icon {
   margin-right: 20px;
 }
+.scroll-top {
+  position: fixed;
+  z-index: 10;
+  right: 200px;
+  bottom: 100px;
+  fill: #0f3076;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.scroll-top.active {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .scroll-top {
+    right: 50px;
+    bottom: 50px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
