@@ -1258,7 +1258,7 @@ body {
 .scroll-top {
   position: fixed;
   z-index: 10;
-  right: 200px;
+  right: 100px;
   bottom: 100px;
   fill: #0f3076;
   opacity: 0;
@@ -1274,5 +1274,77 @@ body {
     right: 50px;
     bottom: 50px;
   }
+}
+
+.modal {
+  display: none;
+}
+
+.modal__content {
+  width: 300px;
+  height: 300px;
+  background-color: #f9f9f9;
+  color: black;
+  padding: 20px;
+}
+
+.modal__close {
+  display: block;
+  font-size: 30px;
+  text-align: right;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal__name {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 20000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+  display: block;
+}
+
+.disble-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
