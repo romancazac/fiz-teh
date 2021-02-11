@@ -1,24 +1,8 @@
-// const intem = document.querySelectorAll(".language__item");
-// for (let index = 0; index < intem.length; index++) {
-//     const inte = intem[index];
-//     inte.addEventListener("click", function(){
-//       inte.classList.remove('active');
-//       inte.classList.toggle('active');
-        
-        
-//     });
-    
-// }
-//scrollTop
 
 const offset = 500;
 const scrollUp = document.querySelector('.scroll-top ');
-
-
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
-
 const updateDashoffset = () => {};
-
 // onscroll
 window.addEventListener('scroll', () => {
   if (getTop() > offset) {
@@ -64,9 +48,7 @@ $('.section-doc__slider').slick({
             slidesToScroll: 1
         }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+    
 ]
   
 });
@@ -109,9 +91,6 @@ $(function() {
   })
 });
 
-
-
-
   (function() {
     
   
@@ -131,10 +110,6 @@ $(function() {
    
   })();
 
-  
- 
-  
-  
   const btns= document.querySelectorAll('.baner__link');
   const modalOverlay = document.querySelector('.modal-overlay ');
   const modals = document.querySelectorAll('.modal');
