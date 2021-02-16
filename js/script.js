@@ -137,3 +137,14 @@ $(function() {
       });
     }
   });
+ $("[data-scroll]").on("click", function (event) {
+    event.preventDefault();
+
+    let elementID = $(this).data('scroll');
+    let elementOffset = $(elementID).offset().top;
+    console.log(elementOffset);
+
+    $("html, body").animate({
+      scrollTop: elementOffset - 65
+    }, 1000);
+  });
